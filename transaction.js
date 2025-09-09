@@ -1,0 +1,4 @@
+// transaction.js
+function getTransaksi(){return JSON.parse(localStorage.getItem('transaksi')||'[]');}
+function saveTransaksi(list){localStorage.setItem('transaksi',JSON.stringify(list));renderTransaksi();}
+function tambahTransaksi(p,h,c){const l=getTransaksi();l.unshift({waktu:new Date().toLocaleString(),produk:p,harga:h,coin:c});saveTransaksi(l);}function renderTransaksi(){const tbody=document.querySelector('#tabelTransaksi tbody');if(!tbody)return;tbody.innerHTML='';getTransaksi().forEach(tr=>{const row=document.createElement('tr');row.innerHTML=`<td>${tr.waktu}</td><td>${tr.produk}</td><td>Rp${parseInt(tr.harga).toLocaleString()}</td><td>${tr.coin}</td>`;tbody.appendChild(row);});}

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Arincell — Gift Card Roblox</title>
+</head>
+<body>
+  <header>
+    <a href="index.html">⬅ Kembali</a>
+    <h1>Gift Card Roblox</h1>
+    <div id="coinDisplay">Coin: 0</div>
+  </header>
+
+  <main>
+    <label>Nominal</label>
+    <select id="nomRoblox">
+      <option value="50000">Rp50.000</option>
+      <option value="100000">Rp100.000</option>
+    </select>
+    <button onclick="beli('Gift Card Roblox',nomRoblox.value,nomRoblox.options[nomRoblox.selectedIndex].text)">Beli Gift Card</button>
+  </main>
+
+  <script src="coin.js"></script>
+  <script src="transaction.js"></script>
+  <script src="buy.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

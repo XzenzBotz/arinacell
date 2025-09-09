@@ -1,0 +1,2 @@
+// buy.js
+function beli(produk,harga,text){harga=parseInt(harga||0);if(!harga){alert('Isi form dengan benar');return;}const coinReward=Math.floor(harga/4000);const newTotal=getCoins()+coinReward;setCoins(newTotal);tambahTransaksi(`${produk} (${text})`,harga,coinReward);alert(`Pembelian ${produk} berhasil! +${coinReward} coin`);}

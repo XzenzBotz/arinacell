@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Arincell — Pulsa</title>
+</head>
+<body>
+  <header>
+    <a href="index.html">⬅ Kembali</a>
+    <h1>Jual Pulsa</h1>
+    <div id="coinDisplay">Coin: 0</div>
+  </header>
+
+  <main>
+    <label>Nomor HP</label>
+    <input type="text" id="noPulsa" placeholder="08xxxxxxxx" />
+    <label>Nominal Pulsa</label>
+    <select id="nomPulsa">
+      <option value="10000">Rp10.000</option>
+      <option value="20000">Rp20.000</option>
+      <option value="50000">Rp50.000</option>
+    </select>
+    <button onclick="beli('Pulsa',nomPulsa.value,nomPulsa.options[nomPulsa.selectedIndex].text)">Beli Pulsa</button>
+  </main>
+
+  <script src="coin.js"></script>
+  <script src="transaction.js"></script>
+  <script src="buy.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

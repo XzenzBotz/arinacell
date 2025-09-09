@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Arincell — E-Wallet</title>
+</head>
+<body>
+  <header>
+    <a href="index.html">⬅ Kembali</a>
+    <h1>Top Up E-Wallet</h1>
+    <div id="coinDisplay">Coin: 0</div>
+  </header>
+
+  <main>
+    <label>Nomor / ID E-Wallet</label>
+    <input type="text" id="idEwallet" placeholder="08xxxxxxxx" />
+    <label>Nominal</label>
+    <select id="nomEwallet">
+      <option value="20000">Rp20.000</option>
+      <option value="50000">Rp50.000</option>
+      <option value="100000">Rp100.000</option>
+    </select>
+    <button onclick="beli('E-Wallet',nomEwallet.value,nomEwallet.options[nomEwallet.selectedIndex].text)">Top Up</button>
+  </main>
+
+  <script src="coin.js"></script>
+  <script src="transaction.js"></script>
+  <script src="buy.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

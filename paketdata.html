@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Arincell — Paket Data</title>
+</head>
+<body>
+  <header>
+    <a href="index.html">⬅ Kembali</a>
+    <h1>Jual Paket Data</h1>
+    <div id="coinDisplay">Coin: 0</div>
+  </header>
+
+  <main>
+    <label>Nomor HP</label>
+    <input type="text" id="hp" placeholder="08xxxxxxxx" />
+    <label>Pilih Paket</label>
+    <select id="paket">
+      <option value="5000">2GB - Rp5.000</option>
+      <option value="15000">5GB - Rp15.000</option>
+      <option value="30000">10GB - Rp30.000</option>
+    </select>
+    <button onclick="beli('Paket Data',paket.value,paket.options[paket.selectedIndex].text)">Beli Paket</button>
+  </main>
+
+  <script src="coin.js"></script>
+  <script src="transaction.js"></script>
+  <script src="buy.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

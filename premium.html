@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Arincell — Premium</title>
+</head>
+<body>
+  <header>
+    <a href="index.html">⬅ Kembali</a>
+    <h1>Akun Premium</h1>
+    <div id="coinDisplay">Coin: 0</div>
+  </header>
+
+  <main>
+    <label>Email / Username</label>
+    <input type="text" id="idPremium" placeholder="user@email.com" />
+    <label>Pilih Layanan</label>
+    <select id="nomPremium">
+      <option value="50000">Netflix - Rp50.000</option>
+      <option value="40000">Spotify - Rp40.000</option>
+      <option value="30000">Canva - Rp30.000</option>
+    </select>
+    <button onclick="beli('Premium',nomPremium.value,nomPremium.options[nomPremium.selectedIndex].text)">Beli</button>
+  </main>
+
+  <script src="coin.js"></script>
+  <script src="transaction.js"></script>
+  <script src="buy.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
